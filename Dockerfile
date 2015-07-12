@@ -3,7 +3,7 @@ MAINTAINER Derek Sherlock <dereksherlock@users.noreply.github.com>
 ENV build_date 2015-07-12
 
 RUN apt-get update -y
-RUN apt-get install asterisk asterisk-config
+RUN apt-get install -y asterisk asterisk-config
 
 # RUN apt-get install curl linux-headers gcc cpp libxml2 libxml2-dev sqlite3 sqlite3-dev openssl libnewt-dev 
 #RUN yum install kernel-headers gcc gcc-c++ cpp ncurses ncurses-devel libxml2 libxml2-devel sqlite sqlite-devel openssl-devel newt-devel kernel-devel libuuid-devel net-snmp-devel xinetd tar -y
