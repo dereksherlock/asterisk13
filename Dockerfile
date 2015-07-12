@@ -1,4 +1,4 @@
-FROM ubuntu:15:10
+FROM ubuntu:15.10
 MAINTAINER Derek Sherlock <dereksherlock@users.noreply.github.com>
 ENV build_date 2015-07-12
 
