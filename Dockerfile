@@ -2,11 +2,19 @@ FROM ubuntu:15.10
 MAINTAINER Derek Sherlock <dereksherlock@users.noreply.github.com>
 ENV build_date 2015-07-12
 
-RUN DEBIAN_FRONTEND=noninteractive apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get install apt-utils -y
-RUN DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y asterisk asterisk-config
+RUN apt-get update
+RUN apt-get install apt-utils -y
+RUN apt-get install dialog -y
+RUN apt-get upgrade -y
+RUN apt-get install -y asterisk asterisk-config
 
+
+#RUN DEBIAN_FRONTEND=noninteractive apt-get update
+#RUN DEBIAN_FRONTEND=noninteractive apt-get install apt-utils -y
+#RUN DEBIAN_FRONTEND=noninteractive apt-get install dialog -y
+#RUN DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
+#RUN DEBIAN_FRONTEND=noninteractive apt-get install -y asterisk asterisk-config
+#
 # RUN apt-get install curl linux-headers gcc cpp libxml2 libxml2-dev sqlite3 sqlite3-dev openssl libnewt-dev 
 #RUN yum install kernel-headers gcc gcc-c++ cpp ncurses ncurses-devel libxml2 libxml2-devel sqlite sqlite-devel openssl-devel newt-devel kernel-devel libuuid-devel net-snmp-devel xinetd tar -y
 
