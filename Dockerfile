@@ -2,7 +2,8 @@ FROM ubuntu:15.10
 MAINTAINER Derek Sherlock <dereksherlock@users.noreply.github.com>
 ENV build_date 2015-07-12
 
-RUN apt-get update -y
+RUN apt-get update
+RUN apt-get upgrade -y
 RUN apt-get install -y asterisk asterisk-config
 
 # RUN apt-get install curl linux-headers gcc cpp libxml2 libxml2-dev sqlite3 sqlite3-dev openssl libnewt-dev 
